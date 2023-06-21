@@ -3,6 +3,7 @@ const getTotalProducts = (products) => {
 	products.forEach((product) => {
 		total = total + product.quantity;
 	});
+
 	return total;
 };
 

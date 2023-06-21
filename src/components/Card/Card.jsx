@@ -1,9 +1,8 @@
 import './Card.css';
 
 function Card() {
-
     return (
-        <div className="card-wrapper">
+        <div className="card-wrapper" data-testid="card">
             <p>Card</p>
         </div>
     );

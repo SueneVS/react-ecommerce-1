@@ -10,9 +10,11 @@ function Header() {
 	const dispatch = useDispatch ();
 	const cart = useSelector((context) => context.cart);
 	const products = cart;
+
 	const toggleCart = useCallback((show) => {
 		setShowCart(show);
 	}, []);
+
 	const handleRemoveFromCart = useCallback((product) => {
 		dispatch(cartActions.remove(product));
 	}, [dispatch]);
@@ -27,7 +29,11 @@ function Header() {
 					<input className="header-search-input" placeholder="O que você procura hoje?" />
 				</div>
 				<div className="header-options">
-					<button className="header-cart-button" onClick={() => toggleCart(true)}>Carrinho {productUtils.getTotalProducts (products)}</button>
+					<button
+					className="header-cart-button"
+					onClick={() => toggleCart(true)}>
+					Carrinho {productUtils.getTotalProducts(products)}
+					</button>
 				</div>
 			</div>
 			<Cart
