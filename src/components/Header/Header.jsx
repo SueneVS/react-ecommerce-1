@@ -31,7 +31,9 @@ function Header() {
 				<div className="header-options">
 					<button
 					className="header-cart-button"
-					onClick={() => toggleCart(true)}>
+					onClick={() => toggleCart(true)}
+					data-testid="header-cart-button"
+					>
 					Carrinho {productUtils.getTotalProducts(products)}
 					</button>
 				</div>

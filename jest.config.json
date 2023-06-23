@@ -8,7 +8,8 @@
 	"collectCoverage": true,
 	"collectCoverageFrom": [
 		"src/components/**/*.{js,jsx}",
-		"src/utils/**/*.{js,jsx}"
+		"src/utils/**/*.{js,jsx}",
+		"!scr/components/**/*.cy.{js,jsx}"
 	],
 	"coverageReporters": [
 		"lcov"

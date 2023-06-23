@@ -4,3 +4,4 @@ node_modules
 .eslintrc.cjs
 commitlint.config.cjs
 vite.config.js
+cypress.config.js

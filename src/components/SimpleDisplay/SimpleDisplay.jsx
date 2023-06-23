@@ -1,6 +1,5 @@
 import { useCallback, useMemo } from 'react';
 import ProductDisplay from '../ProductDisplay/ProductDisplay';
-
 import './SimpleDisplay.css';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../store/cart';
@@ -19,7 +18,7 @@ function SimpleDisplay({ products }) {
 	}), [products, handleAddToCart]);
 
 	return (
-		<section className="simple-display-wrapper">
+		<section className="simple-display-wrapper" data-testid="simple-display">
 			{productsMap}
 		</section>
 	);
