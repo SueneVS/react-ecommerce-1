@@ -1,11 +1,15 @@
 .header-wrapper {
 	align-items: center;
-	background-color: #017BFE;
-	color: white;
+	background-color: #D5DFFF;
+	color: #2F1C6A;;
 	display: flex;
 	margin-bottom: 15px;
 	padding: 5px 10px;
 	height: 40px;
+	box-shadow: 0 0 3px 1px;
+}
+.header-menu{
+	flex: 1;
 }
 
 .header-logo {
@@ -32,14 +36,21 @@
 .header-options {
 	display: flex;
 	flex: 1;
-	justify-content: flex-end;
+	justify-content: space-around;
+
+}
+
+.header-login-button{
+	color:  #2F1C6A;;
+	text-decoration: none;
 }
 
 .header-cart-button {
 	background: none;
 	border: none;
-	color: white;
+	color:  #2F1C6A;;
 	cursor: pointer;
+	font-size: medium;
 }
 
 @media screen and (max-width: 576px) {
@@ -49,7 +60,8 @@
   }
 
 	.header-search {
-		width: 100%;
+		width: 90%;
+		margin-top: 10px 0px;
 	}
 
 	.header-options {

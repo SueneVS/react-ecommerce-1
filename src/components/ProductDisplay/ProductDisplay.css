@@ -1,8 +1,9 @@
 .product-display-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	min-width: 200px;
 	border: solid 1px lightgray;
+	padding: 5px;
 }
 
 .product-display-container {

@@ -4,17 +4,17 @@ import './Header.css';
 import { productUtils } from '../../utils';
 import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../store/cart';
+import { Link } from 'react-router-dom';
+import MenuHeader from '../../components/MenuHeader';
 
 function Header() {
 	const [showCart, setShowCart] = useState(false);
 	const dispatch = useDispatch ();
 	const cart = useSelector((context) => context.cart);
 	const products = cart;
-
 	const toggleCart = useCallback((show) => {
 		setShowCart(show);
 	}, []);
-
 	const handleRemoveFromCart = useCallback((product) => {
 		dispatch(cartActions.remove(product));
 	}, [dispatch]);
@@ -22,6 +22,9 @@ function Header() {
 	return (
 		<>
 			<div className="header-wrapper">
+				<div className='header-menu'>
+					<MenuHeader />
+				</div>
 				<div className="header-logo">
 					<h1 className="header-logo-text">E-commerce</h1>
 				</div>
@@ -29,6 +32,12 @@ function Header() {
 					<input className="header-search-input" placeholder="O que você procura hoje?" />
 				</div>
 				<div className="header-options">
+					<Link
+					to="/login"
+					className='header-login-button'
+					>
+					Login
+					</Link>
 					<button
 					className="header-cart-button"
 					onClick={() => toggleCart(true)}
@@ -44,7 +53,6 @@ function Header() {
 			products={products}
 			onRemoveProduct={handleRemoveFromCart}
 			/>
-
 		</>
 	);
 }
