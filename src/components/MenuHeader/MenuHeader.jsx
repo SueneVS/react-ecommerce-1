@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import {FaBars, FaTimes, FaUserAlt,  FaChartBar, FaInfoCircle} from 'react-icons/fa';
+import {FaBars, FaTimes, FaGlobe, FaSignInAlt, FaUserCircle, FaUsers, FaAddressCard} from 'react-icons/fa';
 import './MenuHeader.css';
+import { Link } from 'react-router-dom';
+import DefaultIcon from '../DefaultIcon/DefaultIcon';
+
 
 function MenuHeader () {
 	const[sidebar, setSidebar] = useState(false);
@@ -9,23 +12,16 @@ function MenuHeader () {
 	const closeSidebar = () => {
 		active(false);
 	};
-	const SidebarItem = ({ Icon, Text }) => {
-		return (
-			<div>
-				<Icon />
-				{Text}
-			</div>
-		);
-	};
+
 	return (
     <div className='MenuHeader-sidebar'>
-      <FaTimes onClick={closeSidebar} />
+      <FaTimes onClick={closeSidebar}  className='MenuHeader-close-sidebar'/>
 			<ul className='MenuHeader-sidebar-item'>
-				<li><SidebarItem Icon={FaChartBar} Text="Quem somos"/></li>
-				<li><SidebarItem Icon={FaUserAlt} Text="Todos os produtos" /></li>
-        <li><SidebarItem Icon={FaUserAlt} Text="Área do cliente" /></li>
-        <li><SidebarItem Icon={FaInfoCircle} Text="Cadastre-se" /></li>
-				<li><SidebarItem Icon={FaInfoCircle} Text="Contato" /></li>
+				<li><Link to="/product"><DefaultIcon Icon={FaGlobe} Text="Todos os produtos" /></Link></li>
+        <li><Link to="/login"><DefaultIcon Icon={FaUserCircle} Text="Área do cliente" /></Link></li>
+        <li><Link to="/register"><DefaultIcon Icon={FaSignInAlt} Text="Cadastre-se" /></Link></li>
+				<li><Link to="/aboutUs"><DefaultIcon Icon={FaUsers} Text="Quem somos"/></Link></li>
+				<li><Link to="/contactUs"><DefaultIcon Icon={FaAddressCard} Text="Entre em contato" /></Link></li>
 			</ul>
     </div>
   );

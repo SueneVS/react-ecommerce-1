@@ -6,8 +6,18 @@ const getTotalProducts = (products) => {
 	return total;
 };
 
+const getTotalPrice = (products) => {
+	let total = 0;
+	products.forEach((product) => {
+		total = total + product.price * product.quantity;
+	});
+	return total;
+};
+
+
 const productUtils = {
-	getTotalProducts
+	getTotalProducts,
+	getTotalPrice
 };
 
 export default productUtils;

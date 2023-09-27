@@ -1,6 +1,6 @@
 import './DefaultButton.css';
 
-function DefaultButton({label = 'Label', onClick}) {
+function DefaultButton({label = 'Entrar', onClick}) {
 
     return (
       <button

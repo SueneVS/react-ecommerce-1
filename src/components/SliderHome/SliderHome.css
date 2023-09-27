@@ -1,0 +1,13 @@
+
+.slider-wrapper{
+	margin: 0 auto;
+}
+
+
+.slide-item{
+	display: block;
+	object-fit: cover;
+	max-height: 100%;
+	margin: 0px 5px;
+}
+

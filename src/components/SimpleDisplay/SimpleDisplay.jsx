@@ -21,6 +21,7 @@ function SimpleDisplay({ products }) {
 		<section className="simple-display-wrapper" data-testid="simple-display">
 			{productsMap}
 		</section>
+
 	);
 }
 

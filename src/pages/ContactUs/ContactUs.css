@@ -1,0 +1,39 @@
+.contactUs-wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	max-width: 100%;
+	min-height: calc(100vh - 250px);
+	align-items: center;
+	margin: auto;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.contactUs-l{
+	flex:2;
+	width: 500px;
+  background-color: #D5DFFF;
+  border-radius: 3px;
+  padding: 40px;
+  box-shadow: 0 5px 10px 0px rgba(48, 72, 88, 0.2);
+	margin: 30px auto;
+}
+
+.contactUs-r{
+	flex: 1;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.contactUs-display-icon{
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+img{
+	margin: auto;
+  display: block;
+	max-width: 100%;
+}
+

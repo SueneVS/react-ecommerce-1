@@ -1,0 +1,25 @@
+.footer-display-wrapper {
+	display: flex;
+	flex-direction: row;
+	min-width: 230px;
+	background-color: #D5DFFF;
+	padding: 20px 10px;
+	justify-content: space-around;
+	height: 100%;
+	flex-wrap: wrap;
+	gap: 5px;
+	text-align: center;
+	font-size: small;
+	box-shadow: 0 0 2px 1px;
+	color: #0b3b72ff;
+
+}
+
+.footer-display-icon{
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+	font-size: large;
+}
+
+

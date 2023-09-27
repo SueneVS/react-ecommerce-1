@@ -1,7 +1,8 @@
 .default-button-wrapper {
-    background-color: lightgreen;
+    background-color:  rgba(86, 141, 229, 1.00);
+		color: #fff;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
 }

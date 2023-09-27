@@ -1,9 +1,9 @@
 .simple-display-wrapper {
 	display: flex;
-	/*flex-wrap: wrap;8*/
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 5px;
-	align-items: center;
-	overflow-x:scroll;
-	white-space: nowrap;
-	scroll-behavior: smooth;
+	justify-content: center;
+	max-width: 100%;
 }
+

@@ -1,0 +1,22 @@
+
+.back-button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #D5DFFF;
+  position: relative;
+  /*top: 50%;
+  left: 50%;*/
+  width: 200px;
+}
+
+.back-button:hover {
+	background: #e4e9f9;
+}
+
+.text {
+	text-decoration: none;
+
+}

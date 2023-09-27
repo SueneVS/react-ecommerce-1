@@ -6,6 +6,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { cartActions } from '../../store/cart';
 import { Link } from 'react-router-dom';
 import MenuHeader from '../../components/MenuHeader';
+import brand2 from '../../../public/assets/brand2.png';
+import DefaultIcon from '../DefaultIcon/DefaultIcon';
+import { FaCartArrowDown, FaUserCircle } from 'react-icons/fa';
 
 function Header() {
 	const [showCart, setShowCart] = useState(false);
@@ -25,25 +28,28 @@ function Header() {
 				<div className='header-menu'>
 					<MenuHeader />
 				</div>
-				<div className="header-logo">
-					<h1 className="header-logo-text">E-commerce</h1>
-				</div>
+				<div className='header-logo'>
+					<Link to="/">
+					<img src={brand2} className='header-logo-img' />
+					</Link>
+					</div>
 				<div className="header-search">
 					<input className="header-search-input" placeholder="O que você procura hoje?" />
 				</div>
-				<div className="header-options">
+				<div className='header-login'>
 					<Link
 					to="/login"
-					className='header-login-button'
-					>
-					Login
+					className='header-login-button'>
+					<DefaultIcon Icon={FaUserCircle} Text={'Minha conta'}/>
 					</Link>
+				</div>
+				<div className='header-cart'>
 					<button
 					className="header-cart-button"
 					onClick={() => toggleCart(true)}
 					data-testid="header-cart-button"
 					>
-					Carrinho {productUtils.getTotalProducts(products)}
+					<DefaultIcon Icon={FaCartArrowDown} Text={productUtils.getTotalProducts(products)}/>
 					</button>
 				</div>
 			</div>

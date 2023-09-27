@@ -1,7 +1,5 @@
 .default-MenuHeader-wrapper{
-
-    color: #2F1C6A;
-    cursor: pointer;
+    color: #0b3b72ff;
 		padding: 0px 5px;
 		width: 100%;
 }
@@ -15,6 +13,7 @@
   width: 300px;
   left:  '0'  '-100%';
   animation: showSidebar .4s;
+	z-index: 10;
 }
 
 @keyframes showSidebar {
@@ -34,27 +33,29 @@
 	flex-direction: column;
   background-color: #D5DFFF;
   font-size: medium;
-  color: #2F1C6A;
+  color: #0b3b72ff;
   padding: 30px;
-  cursor: pointer;
-  border-radius: 10px;
   margin: 30px 15px 20px;
 	gap: 30px;
 }
 
-li {
-	list-style-type: none;
-}
-
 .MenuHeader-sidebar-item li:hover {
-	background-color: #e4e9f9;
+	background-color: rgb(227, 236, 253);
 	border-radius: 5px;
 	padding: 5px 5px;
 	width: 100%;
 }
 
-svg {
-    margin: 0 20px;
+.MenuHeader-close-sidebar {
+	padding: 5px;
+  margin: 30px 15px 20px;
+	position: relative;
+	right: 30%;
 }
 
+.MenuHeader-close-sidebar:hover{
+	background-color: rgb(227, 236, 253);
+	border-radius: 50%;
+	padding: 5px;
+}
 

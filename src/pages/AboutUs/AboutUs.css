@@ -1,0 +1,35 @@
+.aboutUs-wrapper{
+	width: 1200px;
+	max-width: 100%;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	padding: 30px;
+	align-content: center;
+	margin: auto;
+
+}
+.aboutUs-l{
+	color: #2F1C6A;
+	background-color: #D5DFFF;
+	margin-bottom: 30px;
+
+}
+
+.aboutUs-r{
+	color: #2F1C6A;
+}
+
+
+h2{
+	text-align: center;
+}
+
+img{
+	margin: auto;
+  display: block;
+	max-width: 100%;
+}
+
+

@@ -1,4 +1,6 @@
+import DefaultIcon from '../DefaultIcon/DefaultIcon';
 import './ProductDisplay.css';
+import {FaCartPlus} from 'react-icons/fa';
 
 function ProductDisplay({ product, onAddToCart }) {
 
@@ -14,10 +16,14 @@ function ProductDisplay({ product, onAddToCart }) {
 					src={firstImage}
 				/>
 			</div>
+			<div className="product-display-brand">
 			<p>{brand}</p>
+			</div>
 			<p>{title}</p>
 			<p>{price}</p>
-			<button data-testid={`product-display-${product.id}`}onClick={() => onAddToCart(product)}>Adicionar ao Carrinho</button>
+			<button className="btn-add-cart" data-testid={`product-display-${product.id}`}onClick={() => onAddToCart(product)}>
+				<DefaultIcon Icon={FaCartPlus} Text="Adicionar ao Carrinho" />
+			</button>
 		</div>
 	);
 }

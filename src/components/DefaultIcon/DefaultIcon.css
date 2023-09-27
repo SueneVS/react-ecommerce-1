@@ -1,0 +1,22 @@
+.DefaultIcon-display-wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.DefaultIcon-display-icon{
+	font-size:x-small;
+}
+
+.DefaultIcon-display-text{
+	font-size: small;
+	font-weight: bold;
+}
+
+svg {
+	margin: 0 10px;
+	cursor: pointer;
+	color: #0b3b72ff;
+	font-size: x-large;
+}

@@ -1,0 +1,19 @@
+.breadcrumbs {
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.breadcrumbs > *{
+	display: flex;
+	margin-right: 10px;
+}
+
+.crumb-back:after {
+	content: '>';
+	margin: 0px 10px;
+}
+
+
+.breadcrumbs .crumb a{
+	color: #91b3f1;
+}

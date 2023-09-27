@@ -1,0 +1,17 @@
+.allProducts-conteiner {
+  width: 1200px;
+	max-width: 100%;
+  display: flex;
+	flex-direction: row;
+  align-items: center;
+  justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	align-content: center;
+	margin: auto;
+
+}
+
+.allProducts-text{
+	margin-bottom: 20px;
+}
