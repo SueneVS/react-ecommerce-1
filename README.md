@@ -1,5 +1,8 @@
 # React E-commerce
 
+
+![Imagem do site E-commerce](/public/assets/Apresentação1.png)
+
 ## Technologies
 
  - Vite
@@ -7,6 +10,8 @@
  - React Router DOM
  - ESLint
  - EditorConfig
+ - Font Awesome Icons
+ - Swiper
 
  ## Requisitos
 
@@ -33,7 +38,6 @@
 	- Nome
 	- E-mail
 	- Senha
-	- Endereços
 
 # Importante
 
